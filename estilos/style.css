@@ -24,3 +24,13 @@
     width: 100%;
     margin-bottom: 80px;
 } 
+
+footer{
+    background-color: #7BB094 !important;
+
+}
+
+footer p{
+    margin-top: 100px;
+    text-align: center;
+}
