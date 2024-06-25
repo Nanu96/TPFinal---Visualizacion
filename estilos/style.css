@@ -1,0 +1,15 @@
+.logo img{
+    width: 120px;
+    height: auto;
+}
+
+#myNavbar{
+    background-color: #7BB094 !important;
+}
+
+.menu-links{
+    display: flex;
+   align-items: center;
+   margin-top: 10px;
+   padding: 2px;
+}
