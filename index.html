@@ -29,9 +29,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div>
   <div class="w3-bar w3-card" id="myNavbar">
-    <!-- LOGO -->
-    <a href="#home"><img  class="logo" src="./imagenes/logo.png" alt=""></a>
-    <!-- Right-sided navbar links -->
+    <a href="#home"><img class="logo" src="./imagenes/logo.png" alt=""></a>
     <div class="w3-right w3-hide-small menu-links">
       <a href="./secciones/turnos.html" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> TURNOS</a>
       <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
@@ -39,17 +37,15 @@ body, html {
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
       <a href="./secciones/iniciarsesion.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> INICIAR SESION</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="nojavascript...void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="nojavascript...void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="./secciones/turnos.html" onclick="w3_close()" class="w3-bar-item w3-button">TURNOS</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">NOSOTROS</a>
   <a href="#tratamientos" onclick="w3_close()" class="w3-bar-item w3-button">TRATAMIENTOS</a>
@@ -203,6 +199,8 @@ body, html {
   
  
 <script>
+
+
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -215,7 +213,7 @@ function onClick(element) {
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
-function w3_open() {
+/*function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
   } else {
@@ -226,7 +224,18 @@ function w3_open() {
 // Close the sidebar with the close button
 function w3_close() {
     mySidebar.style.display = "none";
-}
+}*/
+
+
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+
+
 </script>
 
 </body>
