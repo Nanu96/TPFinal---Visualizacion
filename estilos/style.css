@@ -3,6 +3,13 @@
     height: auto !important;
 }
 
+@media (max-width: 768px) {
+    .logo{
+        width: 60px !important;
+        height: auto !important;
+    }
+}
+
 #myNavbar{
     background-color: #7BB094 !important;
 }
